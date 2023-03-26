@@ -207,3 +207,16 @@ Mar 24 18:23:38 ip-172-31-24-50.eu-central-1.compute.internal systemd[1]: Starti
 Mar 24 18:23:38 ip-172-31-24-50.eu-central-1.compute.internal systemd[1]: Started httpd.service - The Apache HTTP Server.
 Mar 24 18:23:38 ip-172-31-24-50.eu-central-1.compute.internal httpd[27156]: Server configured, listening on: port 80
 [root@ip-172-31-24-50 html]#
+
+
+Its done now.
+
+GO BACK TO THE EC2 INSTANCE AND OPEN PUBLIC IP TO CHECK IF THE "YASHVIK-FOOD" WEBSITE IS UP AND RUNNING.
+
+IF YOU COPY "IP ADDRESS" AND PASTE IT IN THE NEW TAB, THE WEBSITE SHOULD POPUP.
+iF YOU CLICK ON "OPEN ADDRESS" OPTION, THEN IT THROWS AN ERROR "This site can’t be reached", THEN YOU HAVE TO SELECT THE URL AND REMOVE "S" IN "HTTPS/" AND ENTER. THE WEBPAGE WHICH POP UP.
+EXAMPLE: THERE IS AN ERROR FOR "https://18.194.105.50/" URL
+         NOW REMOVE LETTER 'S' FROM THE URL AND HIT ENTER
+       i.e: http://18.194.105.50/
+
+EVER AFTER THIS IF THERE IS ERROR THEN CHECK 'SECURITY GROUP'S' INBOUND RULES. THE 'ssh'(port number:80) SHOULD BE FOR 'myipaddress' AND 'http'(port number:22) SHOULD BE 'anywhere'
